@@ -1,0 +1,54 @@
+html {
+  font-family: "Centry Gothic";
+}
+
+body {
+  background: #f8f8ff;
+}
+
+ul {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.row {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.hr-small {
+  size: 2px;
+  width: 50%;
+}
+
+img {
+    width: 400px;
+    height: 255px;
+}
+.img-small {
+    width: 300px;
+    height: 191px;
+    padding: 10px;
+}
+
+/* ROW_BLURB */
+.row_blurb {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.row_blurb p {
+  font-size: 1.4em;
+}
+.row_blurb strong {
+  font-size: 1.2em;
+}
+.row_blurb hr {
+  size: 2px;
+  width: 75%;
+}
+.profile_img {
+  width: 145px;
+  height: 145px;
+  float: right;
+}
