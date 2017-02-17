@@ -91,28 +91,32 @@
                 <h1 class="md-display-4" >Skill Set</h1>
             </div>
 
-            <!-- Skillz -->
+            <!-- Tech -->
             <div id="skills" layout="row" layout-align="start none" class="skills-me container" >
 
                 <div flex="33" layout="column" >
 
-                    <div class="net-card" md-whiteframe="10" layout-margin layout-padding layout="row" flex="33">
-                        <h1 class="md-display-1" flex="66">C# .NET</h1>
+                    <div class="net-card" md-whiteframe="10" layout-margin layout-padding layout="row" flex="33"
+                         ng-click="controller.setActiveCompetancy(0)">
+                        <img class="img-icon" src="https://camo.githubusercontent.com/682541f39216718f231683a21e0b131a67d532c3/68747470733a2f2f73332d75732d776573742d322e616d617a6f6e6177732e636f6d2f7465737464726976656e6c6561726e696e676275636b65742f4353484152502e706e67" />
                         <p class="md-subhead">
-                            Full Stack .NET Development
+                            Fully Experianced Full Stack .NET Developer, including; Websites, Desktop Solutions and Server Apps.
+                        </p>
+
+                    </div>
+
+                    <div class="db-card" md-whiteframe="10" layout-margin layout-padding layout="row" flex="33"
+                        ng-click="controller.setActiveCompetancy(1)">
+                        <img class="img-icon" src="https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg" />
+                        <p class="md-subhead">
+                            Fully Experienced SQL Database designer and developer, using both MSSQL and Oracle.
+
                         </p>
                     </div>
 
-                    <div class="db-card" md-whiteframe="10" layout-margin layout-padding layout="row" flex="33">
-                        <h1 class="md-display-1" flex="66">Databases</h1>
-                        <p class="md-subhead">
-                            Fully Experienced SQL Database designer.
-                        </p>
-                    </div>
-
-
-                    <div class="arch-card" md-whiteframe="10" layout-margin layout-padding layout="row" flex="33">
-                        <h1 class="md-display-1" flex="66">Architecture</h1>
+                    <div class="arch-card" md-whiteframe="10" layout-margin layout-padding layout="row" flex="33"
+                         ng-click="controller.setActiveCompetancy(2)">
+                        <img class="img-icon" src="http://deviq.com/wp-content/uploads/Application-Layers.png" />
                         <p class="md-subhead">
                             Code Solution Design and Software Architecture
                         </p>
@@ -120,30 +124,40 @@
 
                 </div>
 
-                <div md-whiteframe="10" flex layout-margin layout-padding>
-                    <h1 class="md-display-1">Main Competancies</h1>
+                <div md-whiteframe="10" flex layout-margin layout-padding
+                    ng-style="controller.activeCompetancyStyle">
+                    <h1 class="md-display-1"><strong>{{controller.activeCompetancy.Title}}</strong></h1>
 
-                    <p class="md-body-1">
-                        <strong>C# .NET</strong> I have Worked with .NET for many years and have become incredibally familiar with both the language and the toolsets.
-                        Currently Working on Full stack Solutions using; ASP.NET, SignalR, Window Presentation Foundation (<i>WPF</i>) and the Entity Framework to develop a distributed real-time data entry and problem solving solution
+                    <p class="md-subhead">
+                        {{controller.activeCompetancy.Intro}}
                     </p>
 
-                    <p class="md-body-1">
-                        <strong>Databases</strong> - I Have a wealth of experience both using SQL to query Databases, and to design and implement efficient data stores using SQL. I have provided training and support to colleagues and took a leading role in database Optimisation Efforts.
-                    </br/>
+                    <p class="md-body-2">
+                        {{controller.activeCompetancy.Body}}
                     </p>
 
-                    <p class="md-body-1">
-                        <strong>Software Architecture</strong> I have been lucky enough to be responsible for the decisions around design and development of a 40,000+ SLOC solution involving mutiple differently distributed solutions.
-                        and Made key decisions in the technologies and standards used, and Solved problems involving leagacy system.
+                    <p class="md-body-2">
+                        {{controller.activeCompetancy.Footer}}
                     </p>
-
                 </div>
 
             </div>
 
+            <div id="competancyTech" layout="row" layout-align="space-around stretch" layout-margin>
 
-            <div id="traits" layout="row" layout-align="space-around center" layout-margin>
+                <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="20"
+                      ng-repeat="tech in controller.activeCompetancy.Technologies"
+                      ng-style="controller.activeCompetancyStyle">
+                    <h2 class="md-subhead align-middle" >{{tech}}</h2>
+                </div>
+            </div>
+
+
+            <div layout layout-align="center center">
+                <h1 class="md-display-3" >Other Interests</h1>
+            </div>
+
+            <div id="traits" layout="row" layout-align="space-around stretch" layout-margin>
 
                 <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="20"
                       ng-repeat="tech in controller.Technologies">

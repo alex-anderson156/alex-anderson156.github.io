@@ -3,65 +3,68 @@ body {
     min-height:100%; height:auto;
 }
 
-.img-circle {
-    border-radius: 50%;
-}
-
-.img-small {
-    width: 128px;
-    height: 128px;
-}
-
-.img-non-sq {
-    width: 152px; 
-}
-
-.img-md {
-    width: 256px;
-    height: 256px;
-}
-
-.rule {
-    border: 0;
-    border-top: 1px solid #8c8c8c;
-    border-bottom: 1px solid #fff;
-}
-
-
-.align-middle {
-    text-align: center;
-}
-
-
-.customProgressBar  {
-    height: 25px !important;
-}
-
+/* ***************
+    LAYOUT
+*/
 .container {
     margin-top: 30px;
     margin-bottom: 60px;
 }
-
-
-#about-me {
+#competancyTech {
+    margin-top: -30px;
+    margin-bottom: 60px;
 }
 
+/* ***************
+    TEXT
+*/
+.align-middle {
+    text-align: center;
+}
 
+/* ***************
+    IMAGE
+*/
+.img-icon {
+    width: 72px;
+    height: 72px;
+}
+.img-small {
+    width: 128px;
+    height: 128px;
+}
+.img-md {
+    width: 256px;
+    height: 256px;
+}
+.img-non-sq {
+    width: 152px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+
+/* ***************
+    Skill Cards
+*/
 .net-card {
-    /*background-color: #1976d2;*/
+    background-color: #690081;
+    color: white;
 }
-
-
 .db-card {
-
+    background-color: #0072C6;
+    color: white;
 }
-
-
 .coms-card {
 
 }
-
-
 .arch-card {
-
+    background-color: #FFC000;
+    color: white;
 }
+
+.veggie-option {
+  float: left;
+  width: 20%;
+  box-sizing: border-box;
+  padding: 0 8px; }
