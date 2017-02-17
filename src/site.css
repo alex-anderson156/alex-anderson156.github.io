@@ -1,54 +1,67 @@
-html {
-  font-family: "Centry Gothic";
-}
-
 body {
-  background: #f8f8ff;
+
+    min-height:100%; height:auto;
 }
 
-ul {
-  padding-left: 0px;
-  margin-left: 0px;
+.img-circle {
+    border-radius: 50%;
 }
 
-.row {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.hr-small {
-  size: 2px;
-  width: 50%;
-}
-
-img {
-    width: 400px;
-    height: 255px;
-}
 .img-small {
-    width: 300px;
-    height: 191px;
-    padding: 10px;
+    width: 128px;
+    height: 128px;
 }
 
-/* ROW_BLURB */
-.row_blurb {
-  padding-top: 25px;
-  padding-bottom: 25px;
+.img-non-sq {
+    width: 152px; 
 }
-.row_blurb p {
-  font-size: 1.4em;
+
+.img-md {
+    width: 256px;
+    height: 256px;
 }
-.row_blurb strong {
-  font-size: 1.2em;
+
+.rule {
+    border: 0;
+    border-top: 1px solid #8c8c8c;
+    border-bottom: 1px solid #fff;
 }
-.row_blurb hr {
-  size: 2px;
-  width: 75%;
+
+
+.align-middle {
+    text-align: center;
 }
-.profile_img {
-  width: 145px;
-  height: 145px;
-  float: right;
+
+
+.customProgressBar  {
+    height: 25px !important;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+#about-me {
+}
+
+
+.net-card {
+    /*background-color: #1976d2;*/
+}
+
+
+.db-card {
+
+}
+
+
+.coms-card {
+
+}
+
+
+.arch-card {
+
 }
