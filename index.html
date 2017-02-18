@@ -23,7 +23,7 @@
 
             <div layout="column" layout-align="center center" class="body-header site-heading-background" layout-padding layout-margin>
 
-                <h1 class="md-display-4" ><strong>Resume Potfolio</strong></h1>
+                <h1 class="md-display-4" ><strong>Resume Portfolio</strong></h1>
 
                 <div class="body-subheading" layout="row" layout-align="start stretch">
                     <h3 class="md-headline"><strong>Alex Anderson</strong> - .NET Software Engineer</h3>
@@ -47,7 +47,13 @@
 
                     <h4 class="md-subhead">
                         <strong>Software</strong> - I have always been passionate about Software from reading and teaching myself after School through reading Computer Science at The University of Portsmouth.
-                        Since I graduated in 2014 I have pursed a career in Softwre Engineering and currently Hold the Position of Software Architect for a Automotive Supplier working on real-time data Analytic Solutions.
+                        <p>
+                            Since graduating with a Second Class Degree in Computer Science in 2014, I have pursed a career in Software Engineering and currently Hold the Position of Software Architect for a Automotive Supplier.
+                        </p>
+
+                        <p>
+                            I have been responsible for both maintining Legacy Software and had the opportunity to grow and build my own software from the ground up.
+                        </p>
                     </h4>
 
 
@@ -79,7 +85,7 @@
                     <img class="img-circle img-small" src="resources/brain.png" />
                     <h2>Open Minded</h2>
                     <p class="align-middle">
-                        ???
+                        I am always looking to introduce new technology to my work and ready to listen to improve myself and my Professional Skills.
                     </p>
                 </div>
 
@@ -98,9 +104,9 @@
 
                     <div class="net-card" md-whiteframe="10" layout-margin layout-padding layout="row" flex="33"
                          ng-click="controller.setActiveCompetancy(0)">
-                        <img class="img-icon" src="https://camo.githubusercontent.com/682541f39216718f231683a21e0b131a67d532c3/68747470733a2f2f73332d75732d776573742d322e616d617a6f6e6177732e636f6d2f7465737464726976656e6c6561726e696e676275636b65742f4353484152502e706e67" />
+                        <img class="img-icon" src="resources/csharp.png" />
                         <p class="md-subhead">
-                            Fully Experianced Full Stack .NET Developer, including; Websites, Desktop Solutions and Server Apps.
+                            Fully Experianced, Full Stack .NET Developer, including; Websites, Desktop Solutions and Server Apps.
                         </p>
 
                     </div>
@@ -116,7 +122,7 @@
 
                     <div class="arch-card" md-whiteframe="10" layout-margin layout-padding layout="row" flex="33"
                          ng-click="controller.setActiveCompetancy(2)">
-                        <img class="img-icon" src="http://deviq.com/wp-content/uploads/Application-Layers.png" />
+                        <img class="img-icon" src="resources/threeteir.png" />
                         <p class="md-subhead">
                             Code Solution Design and Software Architecture
                         </p>
@@ -126,7 +132,7 @@
 
                 <div md-whiteframe="10" flex layout-margin layout-padding
                     ng-style="controller.activeCompetancyStyle">
-                    <h1 class="md-display-1"><strong>{{controller.activeCompetancy.Title}}</strong></h1>
+                    <h1 class="md-display-1"><strong><u>{{controller.activeCompetancy.Title}}</u></strong></h1>
 
                     <p class="md-subhead">
                         {{controller.activeCompetancy.Intro}}
@@ -148,13 +154,13 @@
                 <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="20"
                       ng-repeat="tech in controller.activeCompetancy.Technologies"
                       ng-style="controller.activeCompetancyStyle">
-                    <h2 class="md-subhead align-middle" >{{tech}}</h2>
+                    <h2 class="md-subhead align-middle" ><strong>{{tech}}</strong></h2>
                 </div>
             </div>
 
 
             <div layout layout-align="center center">
-                <h1 class="md-display-3" >Other Interests</h1>
+                <h1 class="md-display-3" >My Other Interests</h1>
             </div>
 
             <div id="traits" layout="row" layout-align="space-around stretch" layout-margin>
@@ -164,7 +170,7 @@
 
                     <img class="img-non-sq" src="{{tech.Icon}}" />
                     <h2>{{tech.Name}}</h2>
-                    <p class="align-middle">
+                    <p class="align-middle md-body-1">
                         {{tech.Description}}
                     </p>
                 </div>
@@ -180,20 +186,22 @@
                 md-whiteframe="10" layout-margin>
 
                 <div layout-padding layout-margin>
-                    <img class="img-circle img-md" src="resources/alex.jpg" / />
+                    <img class="img-md" src="resources/dcp_home.png" / />
                 </div>
 
                 <div flex layout="column" layout-padding>
 
                     <h3 class="md-title">
-                        Hi, I'm Alex. I am a Currently a <strong>Software Architect</strong> based in Bury St Edmunds, Suffolk.
+                        Analyser Control Panel Suite
                     </h3>
 
                     <h4 class="md-subhead">
-                        <strong>Software</strong> - I have always been passionate about Software from reading and teaching myself after School through reading Computer Science at The University of Portsmouth.
-                        Since I graduated in 2014 I have pursed a career in Softwre Engineering and currently Hold the Position of Software Architect for a Automotive Supplier working on real-time data Analytic Solutions.
+                        The Control Panel is my solution to allow our current team to create, maintain and develop Applications around Delphi. The aim of this Project was to create a flexible, easy to distribute system with a common and easy to use interface for all the Applications we need to produce.
                     </h4>
 
+                    <p>
+
+                    </p>
 
 
                 </div>

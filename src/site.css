@@ -6,6 +6,9 @@ body {
 /* ***************
     LAYOUT
 */
+h3 {
+    margin: 0px;
+}
 .container {
     margin-top: 30px;
     margin-bottom: 60px;
@@ -55,12 +58,9 @@ body {
     background-color: #0072C6;
     color: white;
 }
-.coms-card {
-
-}
 .arch-card {
     background-color: #FFC000;
-    color: white;
+    color: black;
 }
 
 .veggie-option {
