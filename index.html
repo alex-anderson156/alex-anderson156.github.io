@@ -124,7 +124,7 @@
                          ng-click="controller.setActiveCompetancy(2)">
                         <img class="img-icon" src="resources/threeteir.png" />
                         <p class="md-subhead">
-                            Code Solution Design and Software Architecture
+                            Code solution design and software architecture
                         </p>
                     </div>
 
@@ -138,7 +138,7 @@
                         {{controller.activeCompetancy.Intro}}
                     </p>
 
-                    <p class="md-body-2">
+                    <p class="md-body-2">4
                         {{controller.activeCompetancy.Body}}
                     </p>
 
@@ -149,7 +149,7 @@
 
             </div>
 
-            <div id="competancyTech" layout="row" layout-align="space-around stretch" layout-margin>
+            <div class="container-no-top" layout="row" layout-align="space-around stretch" layout-margin>
 
                 <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="20"
                       ng-repeat="tech in controller.activeCompetancy.Technologies"
@@ -163,7 +163,7 @@
                 <h1 class="md-display-3" >My Other Interests</h1>
             </div>
 
-            <div id="traits" layout="row" layout-align="space-around stretch" layout-margin>
+            <div layout="row" layout-align="space-around stretch" layout-margin>
 
                 <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="20"
                       ng-repeat="tech in controller.Technologies">
@@ -182,29 +182,76 @@
 
             <!-- Projects -->
 
-            <div id="about-me" layout="row" layout-align="start none" class="about-me container"
-                md-whiteframe="10" layout-margin>
+            <div layout="row" layout-align="center center" class="about-me container" md-whiteframe="10" layout-margin>
 
                 <div layout-padding layout-margin>
-                    <img class="img-md" src="resources/dcp_home.png" / />
+                    <img src="resources/dcp_home.png" width="305px" height="172px" />
                 </div>
 
                 <div flex layout="column" layout-padding>
+                    <h1 class="md-head" >Analyser Control Suite</h1>
+                    <div>
+                        <p class="md-subhead">
+                            This project was born out of the thinning of our development team and increase in workload; we needed a new modern framework that would speed up development of applications
+                            and reduce the time it took to train users of the system.
+                        </p>
 
-                    <h3 class="md-title">
-                        Analyser Control Panel Suite
-                    </h3>
+                        <p class="md-body-1">
+                            This project was built from the ground up over the period of a year, using WPF as the framework of choice for building the graphical user interface due to my expertise with the MVVM design pattern and the customisation of WPF UI elements.
+                        </p>
 
-                    <h4 class="md-subhead">
-                        The Control Panel is my solution to allow our current team to create, maintain and develop Applications around Delphi. The aim of this Project was to create a flexible, easy to distribute system with a common and easy to use interface for all the Applications we need to produce.
-                    </h4>
+                        <p class="md-body-1">
+                            I decided to build an applications system, similar to that used by Android where each application is built upon a stack of activities, each activity has its own singular responsibility, GUI and memory
+                            allowing activity states to persist around the users activity.
+                        </p>
 
-                    <p>
+                        <p class="md-body-1">
+                            We already had solutions using SQL databases so we adapted the Microsoft's Entity Framework to provide a data access layer to our application. This was designed to allow developers to easily and safely manipulate the database ensuring A.C.I.D principles were observed, and database was easily rolled back if a error was detected.
+                        </p>
 
-                    </p>
+                        <p class="md-body-1">
+                            As the project was to house many different data analysers, we required a strong, fast and flexible charting library. The open source solution OxyPlot was chosen.
+                            I created an abstraction layer using the builder design pattern to hide any Oxyplot specifics from the developers, this meant that Oxyplot could easily be removed and replaced with minimal impact on other applications.
+                        </p>
 
-
+                    </div>
                 </div>
+            </div>
+
+            <div class="container-no-top" layout="row" layout-align="space-around stretch" layout-margin>
+                <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="25">
+                    <a href="resources/dcp_monitor.png"><img class="img-thumb" src="resources/dcp_monitor.png"  /> </a>
+                </div>
+
+                <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="25">
+                    <a href="resources/dcp_monitor_2.png"><img class="img-thumb"  src="resources/dcp_monitor_2.png" /> </a>
+                </div>
+
+                <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="25">
+                    <a href="resources/dcp_monitor_3.png"><img class="img-thumb"  src="resources/dcp_monitor_3.png" /> </a>
+                </div>
+
+                <div md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="25">
+                    <a href="resources/dcp_trees.png"><img class="img-thumb"  src="resources/dcp_trees.png" /> </a>
+                </div>
+            </div>
+
+            <div class="container-no-top" layout="row" layout-align="space-around stretch" layout-margin>
+                <div class="c-sharp-file" md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="33">
+                    <a href="resources/csharp/EscalationWatcherInformation.cs"><p class="md-subhead">EscalationWatcherInformation.cs</p></a>
+                    <md-tooltip>Responsible for Managing the States of Escalation Events [SignalR]!</md-tooltip>
+                </div>
+
+                <div class="c-sharp-file" md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="33">
+                    <a href="resources/csharp/DCPApp.cs"><p class="md-subhead">DCPApp.cs</p></a>
+                    <md-tooltip>Represents a central collection of activities and its states.</md-tooltip>
+                </div>
+
+                <div class="c-sharp-file" md-whiteframe="10" layout="column" layout-padding layout-align="center center" flex="33">
+                    <a href="resources/csharp/DCPActivity.cs"><p class="md-subhead">DCPActivity.cs</p></a>
+                    <md-tooltip>Represents an activity and its Interface Elements.</md-tooltip>
+                </div>
+
             </div>
 
 

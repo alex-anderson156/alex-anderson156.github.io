@@ -13,8 +13,8 @@ h3 {
     margin-top: 30px;
     margin-bottom: 60px;
 }
-#competancyTech {
-    margin-top: -30px;
+.container-no-top {
+    margin-top: -30px !important;
     margin-bottom: 60px;
 }
 
@@ -36,6 +36,10 @@ h3 {
     width: 128px;
     height: 128px;
 }
+.img-thumb {
+    width: 227px;
+    height: 128px;
+}
 .img-md {
     width: 256px;
     height: 256px;
@@ -50,6 +54,14 @@ h3 {
 /* ***************
     Skill Cards
 */
+.c-sharp-file {
+    background-color: #690081;
+    color: white;
+}
+.c-sharp-file a, a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
 .net-card {
     background-color: #690081;
     color: white;
